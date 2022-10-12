@@ -57,7 +57,7 @@ PercentChange <- (HData$HeightCM-lag(HData$HeightCM))/HData$HeightCM*100
 
 HData$HPercentChange <- PercentChange
 
-NBAReactbl <- HData %>% reactable(columns = list(YrStart = colDef(name = "Starting year"), HeightCM = colDef(name = "Average NBA height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
+NBAReactbl <- HData %>% reactable(columns = list(YrStart = colDef(name = "Draft class year"), HeightCM = colDef(name = "Average NBA height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
                                            fill_color = c("pink","lightgreen"),
                                            number_fmt=scales::number_format(accuracy=.1)))))
 
@@ -70,7 +70,7 @@ PercentChange <- (GuardPositionData$HeightCM-lag(GuardPositionData$HeightCM))/Gu
 
 GuardPositionData$HPercentChange <- PercentChange
 
-GuardReactbl <- GuardPositionData %>% reactable(columns = list(YrStart = colDef(name = "Starting year"), HeightCM = colDef(name = "Average Guard height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
+GuardReactbl <- GuardPositionData %>% reactable(columns = list(YrStart = colDef(name = "Draft class year"), HeightCM = colDef(name = "Average Guard height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
                                            fill_color = c("pink","lightgreen"),
                                            number_fmt=scales::number_format(accuracy=.1)))))
 
@@ -84,7 +84,7 @@ PercentChange <- (ForwardPositionData$HeightCM-lag(ForwardPositionData$HeightCM)
 
 ForwardPositionData$HPercentChange <- PercentChange
 
-ForwardReactbl <- ForwardPositionData %>% reactable(columns = list(YrStart = colDef(name = "Starting year"), HeightCM = colDef(name = "Average Forward height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
+ForwardReactbl <- ForwardPositionData %>% reactable(columns = list(YrStart = colDef(name = "Draft class year"), HeightCM = colDef(name = "Average Forward height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
                                            fill_color = c("pink","lightgreen"),
                                            number_fmt=scales::number_format(accuracy=.1)))))
 
@@ -97,7 +97,7 @@ PercentChange <- (CenterPositionData$HeightCM-lag(CenterPositionData$HeightCM))/
 
 CenterPositionData$HPercentChange <- PercentChange
 
-CenterReactbl <- CenterPositionData %>% reactable(columns = list(YrStart = colDef(name = "Starting year"), HeightCM = colDef(name = "Average Center height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
+CenterReactbl <- CenterPositionData %>% reactable(columns = list(YrStart = colDef(name = "Draft class year"), HeightCM = colDef(name = "Average Center height in CM", format = colFormat(digits = 1)), HPercentChange = colDef(name = "Height percent change", format = colFormat(digits = 1),cell = data_bars(., 
                                            fill_color = c("pink","lightgreen"),
                                            number_fmt=scales::number_format(accuracy=.1)))))
 
